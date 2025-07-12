@@ -1,0 +1,21 @@
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrapper {
+  & .input {
+    --input-bd: var(--mantine-color-gray-3);
+    --input-placeholder-color: var(--mantine-color-gray-6);
+  }
+
+  &[data-size='md'] {
+    & .input {
+      --input-padding-inline-end: 12px;
+      --input-padding-inline-start: 12px;
+      --input-size: 40px;
+      --input-height: 40px;
+    }
+  }
+}

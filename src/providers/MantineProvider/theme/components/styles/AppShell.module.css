@@ -1,0 +1,8 @@
+:global(.mantine-AppShell-footer).footer {
+  --mantine-color-body: var(--app-shell-footer-background-color);
+  padding: var(--app-shell-footer-padding);
+}
+
+.main {
+  background-color: var(--app-shell-main-background-color);
+}

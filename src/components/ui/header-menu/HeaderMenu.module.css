@@ -1,0 +1,41 @@
+.tabs {
+  --text-color: var(--mantine-color-gray-4);
+
+  .tabList {
+    height: var(--app-shell-header-height);
+
+    &::before {
+      border: none;
+    }
+
+    .tab {
+      height: inherit;
+      padding: 0;
+      border-bottom-width: 3px;
+
+      &[aria-selected="true"] {
+        --tabs-color: var(--mantine-color-blue-4);
+        filter: contrast(2);
+      }
+
+      &:hover {
+        background: none;
+
+        &[aria-selected="false"] {
+          border-color: transparent;
+        }
+      }
+
+      .link {
+        background: none;
+        padding: 0;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    --tabs-list-gap: 32px;
+  }
+}

@@ -1,0 +1,7 @@
+.filterInputRoot, :global([data-mantine-color-scheme='dark']) .filterInputRoot {
+    border-bottom: none;
+
+    .filterInput {
+        padding: 0 8px
+    }
+}
